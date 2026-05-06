@@ -4,8 +4,15 @@
     <vendor>Pankaj Gaur</vendor>
 
     <description><![CDATA[
-    A simple Android Studio plugin to convert multiple SVG files into Android VectorDrawable format (.xml) in one go.<br>
-    Select one or more SVG files or directories in the Project View, right-click, and select "Batch Vector Asset".
+    A simple Android Studio plugin to convert multiple SVG files into Android VectorDrawable format (.xml) in one go.<br><br>
+    <b>Features:</b>
+    <ul>
+        <li>Batch conversion of multiple SVG files.</li>
+        <li>Right-click integration in Project View.</li>
+        <li>Automatic renaming and lowercasing for Android resources.</li>
+    </ul>
+    <br>
+    <b>Usage:</b> Select one or more SVG files or directories in the Project View, right-click, and select "Batch Vector Asset".
     ]]></description>
 
     <depends>com.intellij.modules.platform</depends>
