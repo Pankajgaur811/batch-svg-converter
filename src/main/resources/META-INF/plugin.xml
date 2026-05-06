@@ -1,0 +1,26 @@
+<idea-plugin>
+    <id>com.pankajgaur.batch_svg_converter</id>
+    <name>Batch SVG Converter</name>
+    <vendor>Pankaj Gaur</vendor>
+
+    <description><![CDATA[
+    A simple Android Studio plugin to convert multiple SVG files into Android VectorDrawable format (.xml) in one go.<br>
+    Select one or more SVG files or directories in the Project View, right-click, and select "Batch Vector Asset".
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <notificationGroup id="SVG to VectorDrawable" displayType="BALLOON"/>
+    </extensions>
+
+    <actions>
+        <action id="ConvertSvgToVectorAction"
+                class="com.pankajgaur.batch_svg_converter.SvgToVectorConverter"
+                text="Batch Vector Asset"
+                description="Import and convert external SVG files to Android Vector XML format">
+            <add-to-group group-id="NewGroup" anchor="last"/>
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>

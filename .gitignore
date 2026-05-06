@@ -1,0 +1,21 @@
+# Gradle
+.gradle
+build/
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Signing Keys (CRITICAL: Do not push these)
+*.pem
+*.crt
+
+# Local environment
+local.properties
+.DS_Store
+
+# Java
+*.class
