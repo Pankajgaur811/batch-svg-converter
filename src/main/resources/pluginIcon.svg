@@ -1,0 +1,52 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00BFA5"/>
+      <stop offset="100%" stop-color="#00897B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded square -->
+  <rect width="40" height="40" rx="8" fill="url(#bgGrad)"/>
+
+  <!-- ── Orange circular conversion arrow ring ── -->
+  <!-- Ring arc (clockwise, leaving a gap at top-right for arrowhead) -->
+  <path
+    d="M 20 5
+       A 15 15 0 1 1 33.5 12"
+    stroke="#FF8C00"
+    stroke-width="2.5"
+    stroke-linecap="round"
+    fill="none"/>
+  <!-- Arrowhead at top-right of ring -->
+  <polygon points="35,9.5 30.5,10 33,14" fill="#FF8C00"/>
+
+  <!-- ── Stacked file documents (back-to-front) ── -->
+
+  <!-- File 3 (furthest back) -->
+  <rect x="9" y="11" width="14" height="17" rx="1.5" fill="white" opacity="0.55"/>
+  <polygon points="20,11 23,11 23,14" fill="#00BFA5" opacity="0.55"/>
+  <polygon points="20,11 23,14 20,14" fill="white" opacity="0.4"/>
+
+  <!-- File 2 (middle) -->
+  <rect x="11" y="13" width="14" height="17" rx="1.5" fill="white" opacity="0.78"/>
+  <polygon points="22,13 25,13 25,16" fill="#00BFA5" opacity="0.6"/>
+  <polygon points="22,13 25,16 22,16" fill="white" opacity="0.5"/>
+
+  <!-- File 1 (front, full opacity) -->
+  <rect x="13" y="15" width="15" height="18" rx="1.5" fill="white"/>
+  <!-- Folded corner cutout -->
+  <polygon points="25,15 28,15 28,18" fill="#00BFA5"/>
+  <polygon points="25,15 28,18 25,18" fill="#E0F2F1"/>
+
+  <!-- "SVG" label on front file -->
+  <text
+    x="20.5"
+    y="27.5"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="5.5"
+    font-weight="bold"
+    fill="#00897B"
+    text-anchor="middle"
+    dominant-baseline="middle">SVG</text>
+</svg>
