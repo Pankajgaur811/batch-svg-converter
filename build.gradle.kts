@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.pankajgaur.batch_svg_converter"
-version = "1.0.0"
+version = "1.0.1"
 
 repositories {
     mavenCentral()
@@ -24,7 +24,7 @@ dependencies {
 }
 
 intellij {
-    version.set("2023.2.5")
+    version.set("2024.1.6")
     type.set("IC")
 }
 
